@@ -6,6 +6,7 @@ import clear from "clear-screen";
 const prompt = promptSync({ sigint: true });
 
 
+
 const hat = "^";
 const hole = "O";
 const fieldCharacter = "░";
@@ -17,14 +18,27 @@ class Field {
 
 		// Replace with your own code //
 		// Set the home position at (0, 0) before the game starts
-		this.positionRow = 0;
-		this.positionCol = 0;
+		this.positionRow = 0; //up down
+		this.positionCol = 0; // left right
 		this.field[this.positionRow][this.positionCol] = pathCharacter;
 	}
 
 	// Print field //
 	print() {
-		clear();
+		let i = pathCharacter;
+    while(true){
+			const command = prompt("input :");
+console.log(`your input ${command}`);
+
+if(command === 'r'){
+  console.log(this.positionRow);
+  console.log(this.positionCol);
+	console.log(this.field);
+}
+
+		}
+
+		// clear();
 
 		// Replace with your own code //
 		console.log(this.field); // Please REMOVE this line before you start your code!
