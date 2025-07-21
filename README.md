@@ -132,7 +132,9 @@
 ### Thinking Process
 
 1. // step 1
+สร้าง field ด้วยการใช้ math.random เพื่อสุ่มให้แสดง character, hole hat และต้องกำหนดให้ hat แสดงได้เพียง 1 ครั้งใน field นี้
 2. // step 2
+สร้าง function ให้ move ได้ 4 ทิศ
 3. // ...
 4. // step n
 

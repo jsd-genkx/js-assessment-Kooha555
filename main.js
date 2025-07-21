@@ -23,10 +23,23 @@ class Field {
 		this.field[this.positionRow][this.positionCol] = pathCharacter;
 	}
 
-	// Print field //
+	Print field //
 	print() {
-		let i = pathCharacter;
-    while(true){
+
+		let randomShape = Math.random();
+		if(randomShape >=0 && randomShape<1/3	){
+			randomShape =  hat;
+		}
+		else if(randomShape >=1/3 && randomShape<2/3){
+			randomShape = hole;
+
+		}else if(randomShape >= 2/3 && randomShape<1){
+			randomShape = fieldCharacter;
+		}
+		console.log(randomShape);
+
+move(){
+		while(true){
 			const command = prompt("input :");
 console.log(`your input ${command}`);
 
@@ -35,17 +48,18 @@ if(command === 'r'){
   console.log(this.positionCol);
 	console.log(this.field);
 }
-
 		}
+	}
+
 
 		// clear();
 
 		// Replace with your own code //
-		console.log(this.field); // Please REMOVE this line before you start your code!
+		// console.log(this.field); // Please REMOVE this line before you start your code!
 	}
 
 	// Your Code //
-}
+
 
 // Game Mode ON
 // Remark: Code example below should be deleted and use your own code.
